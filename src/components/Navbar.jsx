@@ -8,7 +8,7 @@ import {
   BulbOutlined,
 } from "@ant-design/icons";
 
-import icon from "../images/3commas_logo.jpg";
+import icon from "../images/3commas_logo.png";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(true);
