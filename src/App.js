@@ -46,18 +46,18 @@ const App = () => {
             All rights reserved.
           </Typography.Title>
           <Space>
-            <Link style={{ color: "#21A698" }} to="/">
+            <Link style={{ color: "#00a59a" }} to="/">
               Home
             </Link>
-            <Link style={{ color: "#21A698" }} to="/cryptocurrencies">
+            <Link style={{ color: "#00a59a" }} to="/cryptocurrencies">
               Cryptocurrencies
             </Link>
-            <Link style={{ color: "#21A698" }} to="/news">
+            <Link style={{ color: "#00a59a" }} to="/news">
               News
             </Link>
             <a
-              href="https://github.com/chrisstef/3CommasVerse"
-              style={{ color: "#21A698" }}
+              href="https://github.com/chrisstef"
+              style={{ color: "#00a59a" }}
               target="_blank"
               rel="noreferrer"
             >

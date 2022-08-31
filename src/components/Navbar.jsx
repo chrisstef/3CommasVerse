@@ -48,7 +48,7 @@ const Navbar = () => {
         <Button
           className="menu-control-container"
           style={{
-            background: "#21A698",
+            background: "#00a59a",
             paddingTop: "0px",
             marginLeft: "2px",
           }}

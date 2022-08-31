@@ -47,7 +47,7 @@ const Homepage = () => {
           Top 10 Cryptocurrencies
         </Title>
         <Title level={3} className="show-more">
-          <Link style={{ color: "#21A698" }} to="/cryptocurrencies">
+          <Link style={{ color: "#00a59a" }} to="/cryptocurrencies">
             Show more
           </Link>
         </Title>
@@ -58,7 +58,7 @@ const Homepage = () => {
           Latest Crypto News
         </Title>
         <Title level={3} className="show-more">
-          <Link style={{ color: "#21A698" }} to="/news">
+          <Link style={{ color: "#00a59a" }} to="/news">
             Show more
           </Link>
         </Title>
