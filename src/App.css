@@ -14,7 +14,7 @@
 }
 
 .ant-menu-item:hover {
-  background-color: #21a699d3 !important;
+  background-color: #00a59a !important;
   outline: 0;
   -webkit-box-shadow: 0 0 0 2px rgba(215, 255, 203, 0.2);
   box-shadow: 0 0 0 px rgba(0, 38, 70, 0.2);
@@ -159,7 +159,7 @@
 }
 
 .coin-heading-container .coin-name {
-  font-weight: 900;
+  font-weight: 700;
   color: var(--pink);
 }
 
@@ -235,7 +235,7 @@
 }
 
 .coin-desc-link a:hover {
-  color: #23847b;
+  color: #0cb7ac;
 }
 
 .coin-desc-link h3 {
@@ -271,7 +271,7 @@
 }
 
 .coin-link a:hover {
-  color: #248d83;
+  color: #0cb7ac;
 }
 
 .coin-link:hover,
@@ -341,7 +341,7 @@
   color: #eee5c8;
 }
 .chart-title {
-  color: #19b294 !important;
+  color: #00a59a !important;
 }
 .price-container {
   display: flex !important;
@@ -373,6 +373,7 @@
   margin: 20px auto 30px auto;
   width: 250px;
 }
+
 .crypto-card-container {
   min-height: 65vh !important;
 }
