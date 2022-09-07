@@ -41,7 +41,7 @@ const CryptoDetails = () => {
 
   if (isFetching) return <Loader />;
 
-  const time = ["3h", "1d", "7d", "30d", "3m", "1y", "3y", "5y"];
+  const time = ["3h", "24h", "7d", "30d", "3m", "1y", "3y", "5y"];
 
   const stats = [
     { title: "Rank", value: cryptoDetails?.rank, icon: <NumberOutlined /> },
