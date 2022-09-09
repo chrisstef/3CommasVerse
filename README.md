@@ -10,7 +10,7 @@ https://3-commas-verse.vercel.app/
 
 ## Project Overview 🚀
 
-''In this repository I built a web app which displays various crypto **details** and **useful news**, for **traders** in real time.''<br>
+In this repository I built a web app which displays various crypto **details** and **useful news**, for **traders** in real time.
 Users can search prices and news related to the crypto of **their choice**.
 
 
