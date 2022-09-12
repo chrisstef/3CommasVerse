@@ -5,7 +5,7 @@ import { Card, Row, Col, Input } from "antd";
 
 import { useGetCryptosQuery } from "../services/cryptoApi";
 
-import Loader from './Loader';
+import Loader from "./Loader";
 
 const Cryptocurrencies = ({ simplified }) => {
   const count = simplified ? 10 : 100;
@@ -52,7 +52,7 @@ const Cryptocurrencies = ({ simplified }) => {
                 }
                 hoverable
               >
-                <p>Price: ${currency.price}</p>
+                <p>Price: ${millify(currency.price)}</p>
                 <p>Market Cap: {millify(currency.marketCap)}</p>
                 <p>Daily Change: {currency.change}%</p>
               </Card>
