@@ -70,7 +70,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
             beginAtZero: true,
           },
           grid: {
-            display:false
+            display:true
           }
         },
     },
