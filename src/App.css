@@ -5,6 +5,7 @@
   --pink: #00a59a;
   --light-blue: #e6f7ff;
   --border: #d9d9d9;
+
 }
 
 * {
@@ -44,6 +45,7 @@
 .routes {
   padding: 30px;
 }
+
 .nav-container {
   position: fixed;
   left: 0;
@@ -63,6 +65,7 @@
 .logo {
   margin: 0 0 0 15px;
 }
+
 .logo a {
   margin: 3 0 0 0px;
   color: white;
@@ -308,13 +311,16 @@
 .select-news {
   width: 180px;
 }
+
 .news-card {
   min-height: 280px !important;
 }
+
 .news-image-container {
   display: flex !important;
   justify-content: space-between !important;
 }
+
 .news-title {
   width: 69%;
 }
@@ -324,6 +330,7 @@
   margin: 17px 0px !important;
   padding-bottom: 10px;
 }
+
 .provider-container {
   display: flex;
   justify-content: space-between;
@@ -340,28 +347,34 @@
   gap: 50px;
   color: #eee5c8;
 }
+
 .chart-title {
   color: #00a59a !important;
 }
+
 .price-container {
   display: flex !important;
   gap: 20px !important;
   align-items: center !important;
   flex-wrap: wrap !important;
 }
+
 .price-change {
   font-weight: 900 !important;
 }
+
 .current-price {
   margin-top: 0px !important;
   font-weight: 900 !important;
 }
+
 .home-heading-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
 }
+
 .show-more {
   margin-top: 0px !important;
 }
@@ -400,5 +413,27 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+  align-items: center;
+}
+
+.coin-percent {
+  width: 210px;
+}
+
+.red {
+  color: #f00606;
+  position: absolute;
+  margin-left: .35rem;
+}
+
+.green {
+  color: #11d811;
+  position: absolute;
+  margin-left: .25rem;
+}
+
+.crypto-price-container {
+  display: flex;
+  text-align: center;
   align-items: center;
 }

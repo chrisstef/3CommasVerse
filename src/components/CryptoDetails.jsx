@@ -37,7 +37,7 @@ const CryptoDetails = () => {
   });
   const cryptoDetails = data?.data?.coin;
 
-  console.log("cryptoDetails: ", cryptoDetails);
+  // console.log("cryptoDetails: ", cryptoDetails);
 
   if (isFetching) return <Loader />;
 
