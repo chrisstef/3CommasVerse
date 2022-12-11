@@ -12,6 +12,7 @@ const Cryptocurrencies = ({ simplified }) => {
   const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
   const [cryptos, setCryptos] = useState();
   const [searchTerm, setSearchTerm] = useState("");
+  const [debouncedSearch, setDebouncedSearch] = useState(searchTerm);
 
   useEffect(() => {
     setCryptos(cryptosList?.data?.coins);
@@ -23,6 +24,14 @@ const Cryptocurrencies = ({ simplified }) => {
     setCryptos(filteredData);
   }, [cryptosList, searchTerm]);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setSearchTerm(debouncedSearch);
+    }, 620);
+
+    return () => clearTimeout(timer);
+  }, [debouncedSearch]);
+
   if (isFetching) return <Loader />;
 
   return (
@@ -31,7 +40,7 @@ const Cryptocurrencies = ({ simplified }) => {
         <div className="search-crypto">
           <Input
             placeholder="Search Cryptocurrency"
-            onChange={(e) => setSearchTerm(e.target.value.toLowerCase())}
+            onChange={(e) => setDebouncedSearch(e.target.value.toLowerCase())}
           />
         </div>
       )}
