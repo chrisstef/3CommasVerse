@@ -1,439 +1,419 @@
 :root {
-  --text-primary: #fff;
-  --bgPrimary: #fff;
-  --bgSecondary: #fff;
-  --pink: #00a59a;
-  --light-blue: #e6f7ff;
-  --border: #d9d9d9;
-
+    --text-primary: #fff;
+    --bgPrimary: #fff;
+    --bgSecondary: #fff;
+    --pink: #00a59a;
+    --light-blue: #e6f7ff;
+    --border: #d9d9d9;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .ant-menu-item:hover {
-  background-color: #00a59a !important;
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 2px rgba(215, 255, 203, 0.2);
-  box-shadow: 0 0 0 px rgba(0, 38, 70, 0.2);
+    background-color: #00a59a !important;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(215, 255, 203, 0.2);
+    box-shadow: 0 0 0 px rgba(0, 38, 70, 0.2);
 }
 
 .menu-control-container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .app {
-  display: flex;
-  overflow: hidden;
+    display: flex;
+    overflow: hidden;
 }
 
 .navbar {
-  flex: 0.19;
-  background-color: #ffffff;
-  border-right: 1 solid #e6e6e6;
+    flex: 0.19;
+    background-color: #ffffff;
+    border-right: 1 solid #e6e6e6;
 }
 
 .main {
-  flex: 0.948;
-  width: 100%;
+    flex: 0.948;
+    width: 100%;
 }
 
 .routes {
-  padding: 30px;
+    padding: 30px;
 }
 
 .nav-container {
-  position: fixed;
-  left: 0;
-  margin: 10px;
-  height: 100vh;
-  margin: 0px;
-  background-color: #ffffff;
+    left: 0;
+    margin: 10px;
+    height: 100vh;
+    margin: 0px;
+    background-color: #ffffff;
 }
 
 .logo-container {
-  background-color: #ffffff;
-  display: flex;
-  padding: 20px;
-  width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    padding: 20px;
+    width: 100%;
 }
 
 .logo {
-  margin: 0 0 0 15px;
+    margin: 0 0 0 15px;
 }
 
 .logo a {
-  margin: 3 0 0 0px;
-  color: white;
+    margin: 3 0 0 0px;
+    color: white;
 }
 
 .menu-control-container {
-  display: none !important;
-  position: absolute !important;
-  right: 10px !important;
-  top: 25px !important;
-  font-size: 1.2rem !important;
-  background-color: var(--bgSecondary) !important;
-  border: 0.1px solid rgb(255, 255, 255) !important;
-  border-radius: 6px !important;
+    display: none !important;
+    position: absolute !important;
+    right: 10px !important;
+    top: 25px !important;
+    font-size: 1.2rem !important;
+    background-color: var(--bgSecondary) !important;
+    border: 0.1px solid rgb(255, 255, 255) !important;
+    border-radius: 6px !important;
 }
 
 .loader {
-  height: 81vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 1300px) {
-  .main {
-    margin-left: 50px;
-  }
-}
-
-@media screen and (max-width: 1170px) {
-  .main {
-    margin-left: 50px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .main {
-    margin-left: 100px;
-  }
+    height: 81vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 800px) {
-  .app {
-    flex-direction: column;
-    overflow: hidden;
-  }
+    .app {
+        flex-direction: column;
+        overflow: hidden;
+    }
 
-  .main {
-    flex: 1;
-    margin-top: 90px;
-    margin-left: 0px;
-    margin-right: 10px;
-  }
+    .main {
+        flex: 1;
+        margin-top: 90px;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
 
-  .nav-container {
-    height: 8vh;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    background-color: var(--bgSecondary) !important;
-  }
+    .nav-container {
+        height: 8vh;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        background-color: var(--bgSecondary) !important;
+    }
 
-  .menu-control-container {
-    display: block !important;
-  }
+    .menu-control-container {
+        display: block !important;
+    }
 
-  .ant-menu {
-    background-color: #ffffffe1 !important;
-    position: absolute;
-    right: 0px;
-  }
+    .ant-menu {
+        background-color: #ffffffe1 !important;
+        position: absolute;
+        right: 0px;
+    }
 
-  .home-title {
-    font-size: 1.4rem !important;
-  }
-  .show-more {
-    font-size: 1.3rem !important;
-  }
+    .home-title {
+        font-size: 1.4rem !important;
+    }
+    .show-more {
+        font-size: 1.3rem !important;
+    }
 }
 
 .coin-detail-container {
-  margin: 30px;
+    margin: 30px;
 }
 
 .coin-heading-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-bottom: 1px solid var(--border);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
 }
 
 .coin-heading-container .coin-name {
-  font-weight: 700;
-  color: var(--pink);
+    font-weight: 700;
+    color: var(--pink);
 }
 
 .coin-heading-container p {
-  font-size: 1rem;
-  opacity: 0.9;
-  margin-bottom: 20px;
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
 }
 
 .stats-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
 .stats-container h2 {
-  font-weight: 700;
-  font-size: 1.4rem;
-  margin-top: 20px;
-  color: var(--pink);
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    color: var(--pink);
 }
 
 .coin-details-heading {
-  font-weight: 700 !important;
-  margin-top: 20px !important;
-  color: var(--pink) !important;
+    font-weight: 700 !important;
+    margin-top: 20px !important;
+    color: var(--pink) !important;
 }
 
 .coin-stats {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--border);
-  font-size: 1rem;
-  opacity: 0.9;
-  padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    font-size: 1rem;
+    opacity: 0.9;
+    padding: 20px;
 }
 
 .coin-stats-name {
-  display: flex;
-  gap: 10px;
-  font-size: 1rem;
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
 }
 
 .stats {
-  font-weight: 800;
+    font-weight: 800;
 }
 
 .coin-value-statistics-heading p {
-  font-size: 1rem;
-  opacity: 0.9;
+    font-size: 1rem;
+    opacity: 0.9;
 }
 
 .coin-desc-link {
-  display: flex;
-  gap: 40px;
-  margin-top: 40px;
-  padding-top: 20px;
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    padding-top: 20px;
 }
 
 .coin-desc-link h2 {
-  font-weight: 700;
-  color: var(--pink);
+    font-weight: 700;
+    color: var(--pink);
 }
 
 .coin-desc-link p {
-  font-size: 1rem;
-  opacity: 0.9;
+    font-size: 1rem;
+    opacity: 0.9;
 }
 
 .coin-desc-link a {
-  color: var(--pink);
+    color: var(--pink);
 }
 
 .coin-desc-link a:hover {
-  color: #0cb7ac;
+    color: #0cb7ac;
 }
 
 .coin-desc-link h3 {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .coin-desc {
-  flex: 0.5;
+    flex: 0.5;
 }
 
 .coin-links {
-  padding: 0px 20px;
-  flex: 0.5;
+    padding: 0px 20px;
+    flex: 0.5;
 }
 
 .coin-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--border);
-  padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding: 20px;
 }
 
 .link-name {
-  text-transform: capitalize;
-  font-size: 1rem;
+    text-transform: capitalize;
+    font-size: 1rem;
 }
 
 .coin-link a {
-  color: var(--pink);
-  font-weight: 700;
-  font-size: 1rem;
+    color: var(--pink);
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 .coin-link a:hover {
-  color: #0cb7ac;
+    color: #0cb7ac;
 }
 
 .coin-link:hover,
 .coin-stats:hover {
-  background-color: var(--bgSecondary);
+    background-color: var(--bgSecondary);
 }
 
 @media screen and (max-width: 1000px) {
-  .stats-container {
-    flex-direction: column;
-  }
-  .coin-desc-link {
-    flex-direction: column;
-  }
-  .stats-container h2 {
-    margin-top: 0px;
-  }
+    .stats-container {
+        flex-direction: column;
+    }
+    .coin-desc-link {
+        flex-direction: column;
+    }
+    .stats-container h2 {
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width: 500px) {
-  .coin-links {
-    padding: 0px;
-  }
-  .coin-detail-container {
-    margin: 0;
-  }
+    .coin-links {
+        padding: 0px;
+    }
+    .coin-detail-container {
+        margin: 0;
+    }
 }
 @media screen and (max-width: 500px) {
-  .heading {
-    margin-top: 20px;
-  }
+    .heading {
+        margin-top: 20px;
+    }
 }
 
 .select-news {
-  width: 180px;
+    width: 180px;
 }
 
 .news-card {
-  min-height: 280px !important;
+    min-height: 280px !important;
 }
 
 .news-image-container {
-  display: flex !important;
-  justify-content: space-between !important;
+    display: flex !important;
+    justify-content: space-between !important;
 }
 
 .news-title {
-  width: 69%;
+    width: 69%;
 }
 
 .news-card p {
-  color: black;
-  margin: 17px 0px !important;
-  padding-bottom: 10px;
+    color: black;
+    margin: 17px 0px !important;
+    padding-bottom: 10px;
 }
 
 .provider-container {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .provider-name {
-  margin-left: 0px;
+    margin-left: 0px;
 }
 
 .chart-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-  color: #eee5c8;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    color: #eee5c8;
 }
 
 .chart-title {
-  color: #00a59a !important;
+    color: #00a59a !important;
 }
 
 .price-container {
-  display: flex !important;
-  gap: 20px !important;
-  align-items: center !important;
-  flex-wrap: wrap !important;
+    display: flex !important;
+    gap: 20px !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
 }
 
 .price-change {
-  font-weight: 900 !important;
+    font-weight: 900 !important;
 }
 
 .current-price {
-  margin-top: 0px !important;
-  font-weight: 900 !important;
+    margin-top: 0px !important;
+    font-weight: 900 !important;
 }
 
 .home-heading-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .show-more {
-  margin-top: 0px !important;
+    margin-top: 0px !important;
 }
 
 .exchange-image {
-  margin: 0px 10px !important;
+    margin: 0px 10px !important;
 }
 .search-crypto {
-  margin: 20px auto 30px auto;
-  width: 250px;
+    margin: 20px auto 30px auto;
+    width: 250px;
 }
 
 .crypto-card-container {
-  min-height: 65vh !important;
+    min-height: 65vh !important;
 }
 
 .crypto-card {
-  min-width: 250px;
+    min-width: 250px;
 }
 .crypto-card {
-  width: 35px;
+    width: 35px;
 }
 
 .crypto-image {
-  height: 40px;
-  width: 40px;
+    height: 40px;
+    width: 40px;
 }
 
 .select-timeperiod {
-  width: 200px !important;
-  margin-top: 20px !important;
+    width: 200px !important;
+    margin-top: 20px !important;
 }
 
 .footer {
-  background-color: #f0f2f5;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  align-items: center;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
 }
 
 .coin-percent {
-  width: 210px;
+    width: 210px;
 }
 
 .red {
-  color: #f00606;
-  position: absolute;
-  margin-left: .35rem;
+    color: #f00606;
+    position: absolute;
+    margin-left: 1rem;
 }
 
 .green {
-  color: #11d811;
-  position: absolute;
-  margin-left: .25rem;
+    color: #11d811;
+    position: absolute;
+    margin-left: 1rem;
 }
 
 .crypto-price-container {
-  display: flex;
-  text-align: center;
-  align-items: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
