@@ -31,13 +31,13 @@
 }
 
 .navbar {
-    flex: 0.19;
+    flex: 0.1;
     background-color: #ffffff;
     border-right: 1 solid #e6e6e6;
 }
 
 .main {
-    flex: 0.948;
+    flex: 1;
     width: 100%;
 }
 
@@ -198,9 +198,10 @@
 
 .coin-desc-link {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     margin-top: 40px;
-    padding-top: 20px;
+    padding-top: 20px; 
 }
 
 .coin-desc-link h2 {
@@ -403,13 +404,13 @@
 .red {
     color: #f00606;
     position: absolute;
-    margin-left: 1rem;
+    margin-left: .3rem;
 }
 
 .green {
     color: #11d811;
     position: absolute;
-    margin-left: 1rem;
+    margin-left: .3rem;
 }
 
 .crypto-price-container {
