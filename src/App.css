@@ -201,7 +201,7 @@
     flex-wrap: wrap;
     gap: 40px;
     margin-top: 40px;
-    padding-top: 20px; 
+    padding-top: 20px;
 }
 
 .coin-desc-link h2 {
@@ -404,13 +404,13 @@
 .red {
     color: #f00606;
     position: absolute;
-    margin-left: .3rem;
+    margin-left: 0.7rem;
 }
 
 .green {
     color: #11d811;
     position: absolute;
-    margin-left: .3rem;
+    margin-left: 0.7rem;
 }
 
 .crypto-price-container {
