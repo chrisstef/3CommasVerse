@@ -404,13 +404,13 @@
 .red {
     color: #f00606;
     position: absolute;
-    margin-left: 0.7rem;
+    margin-left: 0.5rem;
 }
 
 .green {
     color: #11d811;
     position: absolute;
-    margin-left: 0.7rem;
+    margin-left: 0.5rem;
 }
 
 .crypto-price-container {
