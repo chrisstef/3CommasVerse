@@ -51,27 +51,25 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
                 borderColor: "#19b294",
                 pointRadius: 1,
                 borderWidth: 2,
-                spanGaps: true
+                spanGaps: true,
             },
         ],
     };
 
     var options = {
         scales: {
-            x:
-            {
+            x: {
                 grid: {
-                    display: false
-                }
+                    display: false,
+                },
             },
-            y:
-            {
+            y: {
                 ticks: {
                     beginAtZero: true,
                 },
                 grid: {
-                    display: true
-                }
+                    display: true,
+                },
             },
         },
     };

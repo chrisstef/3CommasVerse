@@ -20,7 +20,7 @@ import {
     useGetCryptoHistoryQuery,
 } from "../services/cryptoApi";
 
-import Loader from './Loader';
+import Loader from "./Loader";
 
 import LineChart from "./LineChart";
 
@@ -52,22 +52,26 @@ const CryptoDetails = () => {
         },
         {
             title: "Market Cap",
-            value: `$ ${cryptoDetails?.marketCap && millify(cryptoDetails?.marketCap)
-                }`,
+            value: `$ ${
+                cryptoDetails?.marketCap && millify(cryptoDetails?.marketCap)
+            }`,
             icon: <DollarCircleOutlined />,
         },
         {
             title: "24h Volume",
-            value: `$ ${cryptoDetails["24hVolume"] && millify(cryptoDetails["24hVolume"])
-                }`,
+            value: `$ ${
+                cryptoDetails["24hVolume"] &&
+                millify(cryptoDetails["24hVolume"])
+            }`,
             icon: <ThunderboltOutlined />,
         },
 
         {
             title: "All time high",
-            value: `$ ${cryptoDetails?.allTimeHigh?.price &&
+            value: `$ ${
+                cryptoDetails?.allTimeHigh?.price &&
                 millify(cryptoDetails?.allTimeHigh?.price)
-                }`,
+            }`,
             icon: <TrophyOutlined />,
         },
     ];
@@ -94,15 +98,18 @@ const CryptoDetails = () => {
         },
         {
             title: "Total Supply",
-            value: `${cryptoDetails?.supply?.total && millify(cryptoDetails?.supply?.total)
-                }`,
+            value: `${
+                cryptoDetails?.supply?.total &&
+                millify(cryptoDetails?.supply?.total)
+            }`,
             icon: <ExclamationCircleOutlined />,
         },
         {
             title: "Circulating Supply",
-            value: `${cryptoDetails?.supply?.circulating &&
+            value: `${
+                cryptoDetails?.supply?.circulating &&
                 millify(cryptoDetails?.supply?.circulating)
-                }`,
+            }`,
             icon: <ExclamationCircleOutlined />,
         },
     ];
@@ -114,8 +121,8 @@ const CryptoDetails = () => {
                     {data?.data?.coin.name} ({data?.data?.coin.symbol}) Price
                 </Title>
                 <p>
-                    {cryptoDetails.name} live price in US Dollar (USD). View value
-                    statistics, market cap and supply.
+                    {cryptoDetails.name} live price in US Dollar (USD). View
+                    value statistics, market cap and supply.
                 </p>
             </Col>
             <Select
@@ -140,8 +147,9 @@ const CryptoDetails = () => {
                             {cryptoDetails.name} Statistics
                         </Title>
                         <p>
-                            An overview showing the statistics of {cryptoDetails.name}, such
-                            as the base and quote currency, the rank, and All time high.
+                            An overview showing the statistics of{" "}
+                            {cryptoDetails.name}, such as the base and quote
+                            currency, the rank, and All time high.
                         </p>
                     </Col>
                     {stats.map(({ icon, title, value }, index) => (
@@ -160,8 +168,9 @@ const CryptoDetails = () => {
                             Other Stats Info
                         </Title>
                         <p>
-                            An overview showing more statistics of {cryptoDetails.name}, such
-                            as the number of exchanges, the total and circulating supply.
+                            An overview showing more statistics of{" "}
+                            {cryptoDetails.name}, such as the number of
+                            exchanges, the total and circulating supply.
                         </p>
                     </Col>
                     {genericStats.map(({ icon, title, value }, index) => (
