@@ -40,7 +40,9 @@ const Cryptocurrencies = ({ simplified }) => {
                 <div className="search-crypto">
                     <Input
                         placeholder="Search Cryptocurrency"
-                        onChange={(e) => setDebouncedSearch(e.target.value.toLowerCase())}
+                        onChange={(e) =>
+                            setDebouncedSearch(e.target.value.toLowerCase())
+                        }
                     />
                 </div>
             )}
@@ -53,17 +55,37 @@ const Cryptocurrencies = ({ simplified }) => {
                         className="crypto-card"
                         key={currency.uuid}
                     >
-                        <Link key={currency.uuid} to={`/crypto/${currency.uuid}`}>
+                        <Link
+                            key={currency.uuid}
+                            to={`/crypto/${currency.uuid}`}
+                        >
                             <Card
                                 title={`${currency.rank}. ${currency.name}`}
                                 extra={
-                                    <img className="crypto-image" src={currency.iconUrl} alt="" />
+                                    <img
+                                        className="crypto-image"
+                                        src={currency.iconUrl}
+                                        alt=""
+                                    />
                                 }
                                 hoverable
                             >
-                                <p>Price: ${Number(currency.price).toFixed(2)}</p>
+                                <p>
+                                    Price: ${Number(currency.price).toFixed(2)}
+                                </p>
                                 <p>Market Cap: {millify(currency.marketCap)}</p>
-                                <div className="crypto-price-container">Daily Change: {currency.change < 0 ? <div className="coin-percent red">{currency.change}%</div> : <div className="coin-percent green">{currency.change}%</div>}</div>
+                                <div className="crypto-price-container">
+                                    Daily Change:{" "}
+                                    {currency.change < 0 ? (
+                                        <div className="coin-percent red">
+                                            {currency.change}%
+                                        </div>
+                                    ) : (
+                                        <div className="coin-percent green">
+                                            {currency.change}%
+                                        </div>
+                                    )}
+                                </div>
                             </Card>
                         </Link>
                     </Col>
